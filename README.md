@@ -1,46 +1,103 @@
-# A simple project using React, Typescript and Bootstrap named Personal Finance Tracker
+💰 Personal Finance Tracker
+A simple and intuitive React + TypeScript application for tracking daily expenses. Users can add spending records, assign them to categories, and visualize totals through interactive charts.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+📍 Live Demo
+👉 https://asel6320.github.io/personal_finance/
 
-## Available Scripts
+🚀 Features
+📋 Add and remove expense items
 
-In the project directory, you can run:
+🗂 Categorize expenses (Food, Clothing, Electronics, etc.)
 
-### `npm start`
+📊 View a Pie Chart summarizing total spending by category
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+🌙 Light/Dark Mode toggle with localStorage preference saving
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+💾 Data persists via localStorage
 
-### `npm test`
+🎯 Built with React, TypeScript, and Bootstrap
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🛠️ Tech Stack
+React 19
 
-### `npm run build`
+TypeScript
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Bootstrap 5
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Chart.js + react-chartjs-2
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+gh-pages (for deployment)
 
-### `npm run eject`
+LocalStorage API
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+📦 Getting Started
+1. Clone the Project
+bash
+Copy
+Edit
+git clone https://github.com/asel6320/personal_finance.git
+cd personal_finance
+2. Install Dependencies
+bash
+Copy
+Edit
+npm install
+3. Start Development Server
+bash
+Copy
+Edit
+npm start
+Then open http://localhost:3000 in your browser.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🏗 Build for Production
+bash
+Copy
+Edit
+npm run build
+Creates an optimized production build in the build/ directory.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+🌐 Deployment on GitHub Pages
+To redeploy:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+bash
+Copy
+Edit
+npm run deploy
+Your app will be live at:
+📍 https://asel6320.github.io/personal_finance/
 
-## Learn More
+📂 Project Structure
+pgsql
+Copy
+Edit
+personal_finance/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── ItemForm/
+│   │   ├── Items/
+│   │   ├── ToolBar/
+│   │   └── SpendingChart/
+│   ├── types/
+│   ├── App.tsx
+│   └── index.tsx
+├── package.json
+└── README.md
+💡 What I Learned
+Creating a complete React app using TypeScript and reusable components
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Implementing a custom Dark Mode toggle using CSS and localStorage
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Deploying a frontend app to GitHub Pages
+
+Data persistence without a backend using LocalStorage
+
+📸 Screenshots
+Light Mode
+<img width="1110" alt="Снимок экрана 2025-06-09 в 2 55 58 AM" src="https://github.com/user-attachments/assets/9aed9746-21eb-4a72-b7a4-560cd30eb57c" />
+
+Dark Mode
+<img width="1115" alt="Снимок экрана 2025-06-09 в 2 56 09 AM" src="https://github.com/user-attachments/assets/a4ae8cf6-cb29-4165-9037-e62ffbc89192" />
+
+
+
