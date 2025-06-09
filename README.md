@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# A simple project using React, Typescript and Bootstrap named Personal Finance Tracker
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
