@@ -13,21 +13,25 @@ function App() {
       id: 1,
       title: 'Bottle of water',
       cost: 100,
+      category: 'Food'
     },
     {
       id: 2,
       title: 'Milk',
       cost: 200,
+      category: 'Food'
     },
     {
       id: 3,
       title: 'Bread',
       cost: 300,
+      category: 'Food'
     },
     {
       id: 4,
       title: 'Dinner at cafe',
       cost: 1300,
+      category: 'Food'
     },
   ])
 
