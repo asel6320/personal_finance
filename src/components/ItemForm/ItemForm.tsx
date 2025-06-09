@@ -44,10 +44,9 @@ const ItemForm: React.FC<Props>  = ({addNewItem}) => {
 
 
   return (
-      <form onSubmit={onSubmit}>
-          <h3>Add new spending</h3>
-          <div className="form-group mb-2">
-              <label htmlFor="name">Title:</label>
+      <form onSubmit={onSubmit} className="d-flex align-items-end gap-2">
+          <div className="form-group mb-0">
+              <label htmlFor="title" className="form-label">Title:</label>
               <input
                   type="text"
                   onChange={changeItem}
@@ -58,14 +57,15 @@ const ItemForm: React.FC<Props>  = ({addNewItem}) => {
                   className="form-control"
               />
           </div>
-          <div className="form-group mb-2">
-              <label htmlFor="cost">Cost:</label>
+          <div className="form-group mb-0">
+              <label htmlFor="cost" className="form-label">Cost:</label>
               <input
                   type="number"
                   onChange={changeItem}
                   value={newItem.cost}
                   id="cost"
                   name="cost"
+                  className="form-control"
               />
           </div>
           <button type="submit" className="btn btn-primary">

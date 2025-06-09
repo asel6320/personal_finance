@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { IItem } from './types';
 import ItemForm from './components/ItemForm/ItemForm';
 import Items from './components/Items/Items';
+import ToolBar from './components/ToolBar/ToolBar';
 import './App.css';
 
 function App() {
@@ -30,6 +31,10 @@ function App() {
   };
 
   return (
+    <>
+      <header>
+        <ToolBar />
+      </header>
       <main className="container mt-4">
         <div className="row">
           <div className="col-6 mb-2">
@@ -40,7 +45,8 @@ function App() {
           </div>
         </div>
       </main>
+    </>
   );
-}
+};
 
 export default App;
