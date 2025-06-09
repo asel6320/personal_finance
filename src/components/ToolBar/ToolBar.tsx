@@ -1,8 +1,11 @@
+import React from 'react';
+import './ToolBar.css';
+
 const ToolBar = () => {
     return (
-        <nav className="navbar bg-primary">
+        <nav className="toolbar navbar">
             <div className="container">
-                <span className="navbar-brand mb-0 text-white fs-1">Personal Finance Tracker</span>
+                <span className="toolbar-title">💰 Personal Finance Tracker</span>
             </div>
         </nav>
     );

@@ -1,0 +1,13 @@
+.toolbar {
+    background: linear-gradient(90deg, #0d6efd, #0b5ed7);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem 0;
+    border-radius: 0 0 12px 12px;
+}
+
+.toolbar-title {
+    color: #ffffff;
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
