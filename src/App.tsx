@@ -11,20 +11,31 @@ function App() {
   const [items, setItems] = useState<IItem[]>([
     {
       id: 1,
-      title: 'Item 1',
+      title: 'Bottle of water',
       cost: 100,
     },
     {
       id: 2,
-      title: 'Item 2',
+      title: 'Milk',
       cost: 200,
     },
     {
       id: 3,
-      title: 'Item 3',
+      title: 'Bread',
       cost: 300,
     },
+    {
+      id: 4,
+      title: 'Dinner at cafe',
+      cost: 1300,
+    },
   ])
+
+  const totalCost = items.reduce((acc, item) => acc + item.cost, 0);
+
+  const deleteItem = (id: number) => {
+    setItems((prevState) => prevState.filter((item) => item.id !== id));
+  }
 
   const addNewItem = (newItem: IItem) => {
     setItems((prevState) => [...prevState, newItem]);
@@ -37,11 +48,14 @@ function App() {
       </header>
       <main className="container mt-4">
         <div className="row">
-          <div className="col-6 mb-2">
+          <div className="col-12 mb-2">
             <ItemForm addNewItem={addNewItem} />
           </div>
-          <div className="col-6 mb-2">
-            <Items items={items} />
+          <div className="col-12 mb-2">
+            <Items items={items} deleteItem={deleteItem} />
+          </div>
+          <div className="mt-2">
+            <h4>Total cost: {totalCost} $</h4>
           </div>
         </div>
       </main>
