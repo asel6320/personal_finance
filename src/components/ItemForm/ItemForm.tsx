@@ -12,7 +12,7 @@ const ItemForm: React.FC<Props>  = ({addNewItem}) => {
   const [newItem, setNewItem] = useState<IItemMutation>({
       title: "",
       category: "Other",
-      cost: 0,
+      cost: 0
   });
 
   const categories: Category[] = ['Food', 'Clothing', 'Electronics', 'Entertainment', 'Other'];

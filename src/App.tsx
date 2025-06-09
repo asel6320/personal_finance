@@ -4,6 +4,7 @@ import { IItem } from './types';
 import ItemForm from './components/ItemForm/ItemForm';
 import Items from './components/Items/Items';
 import ToolBar from './components/ToolBar/ToolBar';
+import SpendingChart from './components/SpendingChart/SpendingChart';
 import './App.css';
 
 function App() {
@@ -59,9 +60,10 @@ function App() {
             <Items items={items} deleteItem={deleteItem} />
           </div>
           <div className="mt-2">
-            <h4>Total cost: {totalCost} $</h4>
+            <h4>Total Spent: {totalCost} $</h4>
           </div>
         </div>
+        <SpendingChart items={items} type="pie" />
       </main>
     </>
   );
