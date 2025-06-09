@@ -1,0 +1,54 @@
+.item-card {
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 12px;
+    padding: 0.75rem;
+}
+
+.item-details {
+    flex: 1 1 auto;
+    min-width: 200px;
+}
+
+.card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.card-text,
+.card-title,
+.category-label {
+    transition: color 0.3s;
+}
+
+.delete-button {
+    transition: all 0.2s ease;
+}
+
+.delete-button:hover {
+    background-color: #dc3545;
+    color: white;
+}
+
+body.dark-mode .item-card {
+    background-color: #2a2a3a !important;
+    color: #e0e0e0 !important;
+    border-color: #444 !important;
+}
+
+body.dark-mode .category-label {
+    color: #b0b0b0 !important;
+}
+
+body.dark-mode .card-text {
+    color: #cccccc !important;
+}
+
+body.dark-mode .delete-button {
+    border-color: #ff6b6b;
+    color: #ff6b6b;
+}
+
+body.dark-mode .delete-button:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+}

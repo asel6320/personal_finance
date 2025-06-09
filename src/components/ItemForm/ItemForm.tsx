@@ -2,6 +2,7 @@ import {useState} from 'react';
 import {IItem, IItemMutation} from '../../types';
 import * as React from "react";
 import {Category} from "../../types";
+import './ItemForm.css';
 
 interface Props {
   addNewItem: (item: IItem) => void;

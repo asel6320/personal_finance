@@ -9,3 +9,15 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.3s ease-in-out;
 }
+
+body.dark-mode #root {
+    background-color: #1e1e1e;
+    color: #e0e0e0;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+}
+
+body.dark-mode .navbar {
+    background-color: #343a40 !important;
+    color: #f8f9fa;
+}
+
